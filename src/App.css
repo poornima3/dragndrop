@@ -1,0 +1,83 @@
+:root {
+  --todo: beige;
+  --doing: lightblue;
+  --done: lightgreen;
+}
+
+.App {
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.board {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-col {
+  background-color: var(--todo);
+}
+
+.doing-col {
+  background-color: var(--doing);
+}
+
+.done-col {
+  background-color: var(--done);
+}
+
+.todo-col, .doing-col, .done-col{
+  padding: 10px 0px;
+}
+
+.todo, .doing, .done {
+  width: 33%;
+  height: 400px;
+}
+
+.doing {
+  margin: 0 10px;
+}
+
+.task-item {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border: 0.7px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: grab;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.task-item:hover {
+  background-color: lightgray;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn{
+  padding: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+.btn:hover{
+  background-color: purple;
+  cursor: pointer;
+  border-radius: 50%;
+}
